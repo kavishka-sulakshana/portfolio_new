@@ -4,16 +4,16 @@ import Image1 from '../../assets/images/mentor.jpg'
 
 const MyWorks = () => {
     return (
-        <section className=" py-16 px-40 flex flex-col justify-center bg-gradient-to-t from-[#00000080] from-20% via-[#00000090] via-20% to-[#0F0F0F] to-80%">
+        <section className=" py-16 px-40 flex flex-col justify-center bg-gradient-to-t from-[#00000080] from-10% via-[#00000090] via-20% to-[#0F0F0F] to-80%">
             <div className="flex justify-between">
                 <Title text="My Works" />
                 <h2 className="text-white underline">See all...</h2>
             </div>
             <div className="flex">
-                <div className="flex-1 flex justify-center items-center">
+                <div className="flex-1 flex justify-center items-center text-lg text-white" style={{ writingMode: "vertical-rl", textOrientation: "upright" }}>
                     PROJECTS
                 </div>
-                <div className=" flex-[2]">
+                <div className=" flex-[5]">
                     <WorkCard title="Mentor" subTitle="Learning management System" status="Completed" image={Image1} />
                     <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} />
                     <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} />
