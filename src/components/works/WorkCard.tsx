@@ -2,7 +2,7 @@ import HomeBtn from "../home/HomeBtn"
 
 const WorkCard = ({ title, subTitle, status, link, technologies = [], image }: { title: string, subTitle: string, status: string, link?: string, technologies?: Array<string>, image: string }) => {
     return (
-        <div className="flex font-serif bg-slate-900 my-6 rounded-lg sm:flex-row flex-col">
+        <div className="flex font-serif backdrop-blur-md border-2 border-gray-900/40 bg-gray-900/50 my-6 rounded-lg sm:flex-row flex-col">
             <div className="flex-none">
                 <img src={image} alt="" className="w-full h-48 sm:h-full sm:w-48 object-cover rounded-lg" loading="lazy" />
             </div>
@@ -33,8 +33,8 @@ const WorkCard = ({ title, subTitle, status, link, technologies = [], image }: {
                     )
                     )}
                 </div>
-                <div className="flex space-x-3 my-1 text-xs font-small sm:justify-start justify-center items-center">
-                    <a href={link} className="flex space-x-4 sm:justify-start justify-center items-center">
+                <div className="flex space-x-3 my-1 text-xs font-small sm:justify-end justify-center items-center">
+                    <a href={link} className="flex space-x-4 sm:justify-end justify-center items-center">
                         <HomeBtn text="See Project" transparent={false} />
                     </a>
                 </div>

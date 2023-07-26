@@ -3,6 +3,7 @@ import AboutMe from "./components/aboutMe/AboutMe"
 import Home from "./components/home/Home"
 import Skills from "./components/skills/Skills"
 import MyWorks from "./components/works/MyWorks"
+import './App.css'
 
 const App = () => {
   return (
