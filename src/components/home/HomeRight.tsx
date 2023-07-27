@@ -2,7 +2,7 @@ import EffectContainer from "./EffectContainer"
 
 const HomeRight = () => {
     return (
-        <div className="text-white md:flex md:flex-col md:items-end md:justify-center flex-1 md:w-full w-60 mx-auto">
+        <div className="flex text-white md:flex md:flex-col content-end md:items-end md:justify-center grow ml-10 md:w-full ">
             <EffectContainer />
         </div>
     )
