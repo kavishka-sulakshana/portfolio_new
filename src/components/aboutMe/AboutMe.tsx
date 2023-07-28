@@ -46,7 +46,7 @@ const AboutMe = () => {
                 </p>
             </div>
             <div className="md:flex md:flex-col md:justify-center md:flex-[1] hidden">
-                <img src={shield} alt="shield" className=" object-cover rounded-2xl m-10 w-64" />
+                <img src={shield} alt="shield" className=" object-cover rounded-2xl p-10 w-64" />
             </div>
         </section>
     )

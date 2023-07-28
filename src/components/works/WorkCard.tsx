@@ -1,8 +1,15 @@
 import HomeBtn from "../home/HomeBtn"
+import { motion } from "framer-motion"
+import { useState } from "react"
+import { InfoCircleOutlined } from '@ant-design/icons';
 
 const WorkCard = ({ title, subTitle, status, link, technologies = [], image }: { title: string, subTitle: string, status: string, link?: string, technologies?: Array<string>, image: string }) => {
+    const [toggle, setToggle] = useState(false);
     return (
-        <div className="flex font-serif backdrop-blur-md border-2 border-gray-900/40 bg-gray-900/50 my-6 rounded-lg sm:flex-row flex-col">
+        <motion.div
+            onHoverStart={() => setToggle(true)}
+            onHoverEnd={() => setToggle(false)}
+            className="flex font-serif backdrop-blur-md border-2 border-gray-900/40 bg-gray-900/50 my-6 rounded-lg sm:flex-row flex-col">
             <div className="flex-none">
                 <img src={image} alt="" className="w-full h-48 sm:h-full sm:w-48 object-cover rounded-lg" loading="lazy" />
             </div>
@@ -16,30 +23,46 @@ const WorkCard = ({ title, subTitle, status, link, technologies = [], image }: {
                             </svg>
                         </button>
                     </h1>
-                    <div className="flex-auto text-base font-medium text-gray-300">
+                    <div className="flex-auto text-base font-medium text-cyan-300">
                         {subTitle}
                     </div>
                     <div className="text-xs leading-6 font-medium uppercase text-gray-400">
                         {status}
                     </div>
                 </div>
-                <div className="flex items-baseline mt-2 mb-3 pb-3 border-b border-slate-200 sm:flex-row flex-col">
+                <div className="flex items-baseline mt-2 mb-3 pb-3 border-b border-slate-200 flex-row text-xs font-semibold flex-wrap">
                     {(!!technologies.length) && technologies.map((tech: string, index: number) =>
                     (
-                        <div id={`${index}`}>
+                        <div id={`${index}`} className="px-1 bg-white m-1 rounded-md">
                             {tech}
                             <br />
                         </div>
                     )
                     )}
                 </div>
-                <div className="flex space-x-3 my-1 text-xs font-small sm:justify-end justify-center items-center">
+                <motion.h1
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0 }}
+                    className="flex text-justify items-baseline mt-2 mb-3 pb-3 sm:flex-row text-sm flex-col flex-wrap text-gray-400 sm:max-w-md">
+                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                </motion.h1>
+                <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0 }}
+                    className="flex space-x-3 my-1 text-xs font-small sm:justify-end justify-center items-center">
                     <a href={link} className="flex space-x-4 sm:justify-end justify-center items-center">
                         <HomeBtn text="See Project" transparent={false} />
                     </a>
-                </div>
+                </motion.div>
+                <motion.div
+                    initial={{ height: "auto", opacity: 1 }}
+                    animate={{ height: !toggle ? "auto" : 0, opacity: !toggle ? 1 : 0 }}
+                    className="flex items-center justify-end text-white">
+                    <span className="text-xs font-medium mx-2 text-gray-400">see more</span>
+                    <InfoCircleOutlined />
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
