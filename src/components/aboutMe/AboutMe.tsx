@@ -5,6 +5,7 @@ import SmallParticle from "../small_comps/SmallParticle";
 import shield from "../../assets/images/shield.jpg"
 import IconParticleComp from "../small_comps/IconParticleComp";
 
+
 const AboutMe = () => {
     const styles = {
         backgroundAll: {
@@ -12,7 +13,7 @@ const AboutMe = () => {
         }
     }
     return (
-        <section className="md:h-screen h-auto md:px-40 px-28 md:py-8 py-24 bg-fixed flex flex-row-reverse bg-gradient-to-l from-cyan-950 to-gray-900 items-center relative">
+        <section className="md:h-screen h-auto md:px-40 px-28 md:py-8 py-24 bg-fixed flex flex-row-reverse bg-gradient-to-l  from-cyan-950 to-gray-900 items-center relative">
             <SmallParticle position="right-20 bottom-20" />
             <SmallParticle position="right-32 bottom-20" />
             <IconParticleComp />

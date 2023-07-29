@@ -1,5 +1,5 @@
 import SkillBar from "./SkillBar"
-import { colors } from "../../RawData.ts"
+import { motion } from "framer-motion"
 
 type skillDataType = {
     skillData:
@@ -12,10 +12,13 @@ type skillDataType = {
 const SkillSet = ({ skillData }: skillDataType) => {
     // const SkillSet = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div className="flex flex-col w-[300px] bg-black rounded-lg justify-center items-center">
-            {skillData.map((skill, index) => (<SkillBar label={skill.label} percentage={skill.percentage} color={colors[index]} />))
+        <motion.div
+            whileHover={{ scale: 1.2, zIndex: 20 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="flex flex-col w-[300px] bg-black/30 rounded-lg justify-center items-center backdrop-blur-sm p-3">
+            {skillData.map((skill, index) => (<SkillBar key={index} label={skill.label} percentage={skill.percentage} color="cyan" />))
             }
-        </div>
+        </motion.div>
     )
 }
 
