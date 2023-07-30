@@ -4,6 +4,7 @@ import Home from "./components/home/Home"
 import Skills from "./components/skills/Skills"
 import MyWorks from "./components/works/MyWorks"
 import './App.css'
+import ContactMe from "./components/Footer/ContactMe"
 
 const App = () => {
   return (
@@ -14,6 +15,10 @@ const App = () => {
         <AboutMe />
         <MyWorks />
         <Skills />
+        <ContactMe />
+        <div className="bg-black/80 p-2 text-center text-white text-xs">
+          © 2023 - Designed & Developed by Kavi$ul@
+        </div>
       </div>
     </div>
   )

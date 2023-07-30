@@ -7,11 +7,11 @@ import IconParticleComp from "../small_comps/IconParticleComp";
 
 
 const AboutMe = () => {
-    const styles = {
-        backgroundAll: {
-            background: "linear-gradient(to right, #000, #43cea2)",  /* Chrome 10-25, Safari 5.1-6 */            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
-    }
+    // const styles = {
+    //     backgroundAll: {
+    //         background: "linear-gradient(to right, #000, #43cea2)",  /* Chrome 10-25, Safari 5.1-6 */            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    //     }
+    // }
     return (
         <section className="md:h-screen h-auto md:px-40 px-28 md:py-8 py-24 bg-fixed flex flex-row-reverse bg-gradient-to-l  from-cyan-950 to-gray-900 items-center relative">
             <SmallParticle position="right-20 bottom-20" />
