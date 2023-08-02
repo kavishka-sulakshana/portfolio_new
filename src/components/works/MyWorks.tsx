@@ -24,10 +24,6 @@ const MyWorks = () => {
                             technologies={work.technologies}
                             description={work.description} />
                     ))}
-                    {/* <WorkCard title="Mentor" subTitle="Learning management System" status="Completed" image={Image1} technologies={["PHP", "HTML", "CSS", "JAVASCRIPT"]} />
-                    <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} />
-                    <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} />
-                    <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} /> */}
                 </div>
             </div>
             <SmallParticle position="md:right-20 md:bottom-20 right-5 bottom-9" />
@@ -35,7 +31,7 @@ const MyWorks = () => {
             <SmallParticle position="md:left-20 md:bottom-20 left-5 bottom-9" />
             <SmallParticle position="md:left-32 md:bottom-20 left-6 bottom-8" />
             <div className="flex justify-center mb-4 mt-8 text-white">
-                SEE ALL {">>"}
+                You can see my all projects in my GitHub profile
             </div>
         </section>
     )
