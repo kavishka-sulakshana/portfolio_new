@@ -8,9 +8,9 @@ import { Environment, OrbitControls } from '@react-three/drei'
 
 const ContactMe = () => {
     return (
-        <section id="contact" className="h-auto md:px-40 px-28 md:py-8 py-28 bg-fixed flex flex-col bg-gray-900 justify-center relative">
+        <section id="contact" className="h-auto md:px-40 sm:px-28 px-5 md:py-8 pt-28 pb-16 bg-fixed flex flex-col bg-gray-900 justify-center relative">
             <Title text="C O N T A C T" />
-            <div className="flex flex-wrap justify-between" >
+            <div className="flex md:flex-wrap md:justify-between items-center justify-center flex-wrap-reverse" >
                 <div className="flex flex-col my-10">
                     <div className="flex flex-row flex-wrap text-gray-300 my-2 items-center">
                         <MailOutlined />
@@ -46,9 +46,9 @@ const ContactMe = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-row flex-wrap text-gray-300 mt-2">
+                <div className="flex flex-row flex-wrap text-gray-300 md:mt-2 mt-5 sm:w-auto sm:h-full w-full">
                     {/* <img src={logo} alt="" className=" max-w-xs w-40 h-40 rounded-full" /> */}
-                    <Canvas camera={{ position: [-15, 0, -15], fov: 55, rotation: [0, 0, 0] }}>
+                    <Canvas camera={{ position: [-15, 0, -15], fov: 55, rotation: [0, 0, 0] }} className="h-40">
                         <pointLight position={[20, 20, 20]} intensity={2} />
                         <Suspense fallback={null}>
                             <Model />

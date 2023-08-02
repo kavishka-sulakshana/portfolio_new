@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { useState } from "react"
 import { InfoCircleOutlined } from '@ant-design/icons';
 
-const WorkCard = ({ title, subTitle, status, link, technologies = [], image }: { title: string, subTitle: string, status: string, link?: string, technologies?: Array<string>, image: string }) => {
+const WorkCard = ({ title, subTitle, status, link, technologies = [], image, description = "" }: { title: string, subTitle: string, status: string, link?: string, technologies?: Array<string>, image: string, description: string }) => {
     const [toggle, setToggle] = useState(false);
     return (
         <motion.div
@@ -44,7 +44,7 @@ const WorkCard = ({ title, subTitle, status, link, technologies = [], image }: {
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0 }}
                     className="flex text-justify items-baseline mt-2 mb-3 pb-3 sm:flex-row text-sm flex-col flex-wrap text-gray-400 sm:max-w-md">
-                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+                    {description}
                 </motion.h1>
                 <motion.div
                     initial={{ height: 0, opacity: 0 }}

@@ -2,7 +2,7 @@ import Title from "../small_comps/Title"
 import { motion } from "framer-motion"
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import SmallParticle from "../small_comps/SmallParticle";
-import shield from "../../assets/images/shield.jpg"
+import logo from "../../assets/images/logo.jpg"
 import IconParticleComp from "../small_comps/IconParticleComp";
 
 
@@ -13,41 +13,41 @@ const AboutMe = () => {
     //     }
     // }
     return (
-        <section id="about" className="md:h-screen h-auto md:px-40 px-28 md:py-8 py-24 bg-fixed flex flex-row-reverse bg-gradient-to-l  from-cyan-950 to-gray-900 items-center relative">
-            <SmallParticle position="right-20 bottom-20" />
-            <SmallParticle position="right-32 bottom-20" />
+        <section id="about" className="md:h-screen h-auto md:px-40 sm:px-28 px-8 md:py-8 py-24 bg-fixed flex flex-row-reverse bg-gradient-to-l  from-cyan-950 to-gray-900 items-center relative">
+            <SmallParticle position="md:right-20 md:bottom-20 right-5 bottom-9" />
+            <SmallParticle position="md:right-32 md:bottom-20 right-6 bottom-8" />
             <IconParticleComp />
             <div className="flex flex-col md:flex-[2]">
                 <div className="flex items-center mb-8">
-                    <motion.span
-                        animate={{
-                            scale: [1, 1.3, 1],
-                            borderRadius: ["0%", "50%", "0%"],
-                        }}
-                        transition={{
-                            duration: 2,
-                            ease: "easeInOut",
-                            repeat: Infinity,
-                        }}
+                    <span
                     ><QuestionCircleOutlined className="text-white text-4xl mr-8"
-                        style={{}} /></motion.span>
+                        style={{}} /></span>
                     <Title text="Who am I ?" />
                 </div>
-                <p className="text-gray-300 text-justify my-1 text-lg">
-                    I am an undergraduate computer science student and Web Developer specializing in full
-                    stack web development. This is my portfolio; So you can see my information and what have I done since 2020...
+                <p className="text-gray-300 text-justify my-1 md:text-lg sm:text-base text-sm">
+                    I'm an undergraduate student in computer science. I have accumulated four years of
+                    self-study experience in web development, which has provided me with a strong foundation
+                    in various programming languages and frameworks. I enjoy solving complex challenges and
+                    finding elegant solutions as a creative problem solver,
+                    and I also thrive in collaborative environments and value effective communication.
                 </p>
-                <p className="text-gray-200 text-justify my-1 text-lg">
-                    I am an undergraduate computer science student and Web Developer specializing in full
-                    stack web development. This is my portfolio; So you can see my information and what have I done since 2020...
-                </p>
-                <p className="text-gray-100 text-justify my-1 text-lg">
-                    I am an undergraduate computer science student and Web Developer specializing in full
-                    stack web development. This is my portfolio; So you can see my information and what have I done since 2020...
+                <br />
+                <p className="text-gray-200 text-justify my-1 md:text-lg sm:text-base text-sm">
+                    I have some experiance in full stack web development and I am familiar with the technologies like
+                    <b> React, Next.js, Node.js, MongoDB, MySQL, Postgresql, Java, Python and many more </b>. I am also familiar with
+                    the tools like Git, Docker, Firebase, Netlify, Vercel, Framer Motion, 3JS etc.
                 </p>
             </div>
             <div className="md:flex md:flex-col md:justify-center md:flex-[1] hidden">
-                <img src={shield} alt="shield" className=" object-cover rounded-2xl p-10 w-64" />
+                <motion.img animate={{
+                    y: [0, 20, 0],
+                }}
+                    transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                    }}
+                    src={logo} alt="shield" className="object-cover rounded-2xl w-64 -rotate-12" />
             </div>
         </section>
     )

@@ -13,7 +13,7 @@ const EffectContainer = () => {
 
   }
   return (
-    <motion.div className="relative lg:w-96 md:w-64 rounded-xl border-2 border-cyan-500/10 backdrop-blur-sm mx-auto flex justify-center content-end transition-all duration-500 hover:transform hover:-translate-x-2 hover:translate-y-15"
+    <motion.div className="relative lg:w-96 md:w-64 w-48 mb-9 rounded-xl border-2 border-cyan-500/10 backdrop-blur-sm mx-auto flex justify-center content-end transition-all duration-500 hover:transform hover:-translate-x-2 hover:translate-y-15"
       style={styles.background}
       animate={{ scale: 1, x: 0 }}
       initial={{ scale: 0, x: 100 }}
