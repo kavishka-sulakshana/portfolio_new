@@ -1,6 +1,6 @@
 import NavButton from "./NavButton"
 import { useState } from "react"
-import { DownCircleOutlined, BulbFilled, EyeFilled, ProjectFilled, CodeFilled, GithubFilled, LinkedinFilled } from "@ant-design/icons"
+import { DownCircleOutlined, ProjectOutlined, PhoneOutlined, HomeOutlined, InfoCircleOutlined, ThunderboltOutlined, GithubFilled, LinkedinFilled } from "@ant-design/icons"
 import NavSection from "./NavSection"
 import { motion } from "framer-motion"
 
@@ -36,24 +36,27 @@ const Navbar = ({ buttonSize, color }: { buttonSize: number, color: string }) =>
       >
 
         <NavSection toggle={toggle}>
-          <NavButton toggle={toggle}>
-            <EyeFilled style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
+          <NavButton toggle={toggle} section="#home">
+            <HomeOutlined style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
           </NavButton>
-          <NavButton toggle={toggle}>
-            <ProjectFilled style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
+          <NavButton toggle={toggle} section="#about">
+            <InfoCircleOutlined style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
           </NavButton>
-          <NavButton toggle={toggle}>
-            <BulbFilled style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
+          <NavButton toggle={toggle} section="#projects">
+            <ProjectOutlined style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
           </NavButton>
-          <NavButton toggle={toggle}>
-            <CodeFilled style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
+          <NavButton toggle={toggle} section="#skills">
+            <ThunderboltOutlined style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
+          </NavButton>
+          <NavButton toggle={toggle} section="#contact">
+            <PhoneOutlined style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
           </NavButton>
         </NavSection>
         <NavSection toggle={toggle}>
-          <NavButton toggle={toggle}>
+          <NavButton toggle={toggle} section="https://github.com/kavishka-sulakshana" newpage="_blank">
             <GithubFilled style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
           </NavButton>
-          <NavButton toggle={toggle}>
+          <NavButton toggle={toggle} section="https://www.linkedin.com/in/kavishka-sulakshana-12b571206" newpage="_blank">
             <LinkedinFilled style={{ fontSize: `${buttonSize}px`, color: `${color}` }} />
           </NavButton>
         </NavSection>

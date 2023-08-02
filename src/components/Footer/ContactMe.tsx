@@ -8,14 +8,14 @@ import { Environment, OrbitControls } from '@react-three/drei'
 
 const ContactMe = () => {
     return (
-        <section className="h-auto md:px-40 px-28 md:py-8 py-28 bg-fixed flex flex-col bg-gray-900 justify-center relative">
+        <section id="contact" className="h-auto md:px-40 px-28 md:py-8 py-28 bg-fixed flex flex-col bg-gray-900 justify-center relative">
             <Title text="C O N T A C T" />
             <div className="flex flex-wrap justify-between" >
                 <div className="flex flex-col my-10">
                     <div className="flex flex-row flex-wrap text-gray-300 my-2 items-center">
                         <MailOutlined />
                         {/* <p className="ml-1">Email : </p> */}
-                        <p className="ml-2">kss20001218@gmail.com</p>
+                        <p className="ml-2">kavisulakshana2000@gmail.com</p>
                     </div>
                     <div className="flex flex-row flex-wrap text-gray-300 my-2 items-center">
                         <LinkedinOutlined />

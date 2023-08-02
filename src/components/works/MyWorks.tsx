@@ -5,7 +5,7 @@ import SmallParticle from "../small_comps/SmallParticle"
 
 const MyWorks = () => {
     return (
-        <section className="relative py-16 px-20 flex flex-col justify-center bg-gradient-to-t from-[#00000080] from-10% via-[#00000090] via-20% to-[#0F0F0F] to-80%">
+        <section id="projects" className="relative py-16 px-20 flex flex-col justify-center bg-gradient-to-t from-[#00000080] from-10% via-[#00000090] via-20% to-[#0F0F0F] to-80%">
             <div className="flex justify-center mb-8 mt-4">
                 <Title text="P R O J E C T S" />
             </div>
