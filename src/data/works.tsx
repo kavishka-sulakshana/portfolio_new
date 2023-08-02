@@ -3,6 +3,7 @@ import paperBot from "../assets/images/mentor.jpg";
 import trinty from "../assets/images/trinty.png";
 import python from "../assets/images/python.png";
 import powerSmart from "../assets/images/powerSmart.jpg";
+import portfolio from "../assets/images/logo.jpg";
 
 const works = [
     {
@@ -49,6 +50,15 @@ const works = [
         image: python,
         technologies: ["PYTHON"],
         description: "These are some simple python utils made by me for do my works easily.",
+    },
+    {
+        id: 6,
+        title: "My Portfolio",
+        subTitle: "My portfolio website",
+        status: "Completed",
+        image: portfolio,
+        technologies: ["REACT", "TAILWINDCSS", "TYPESCRIPT", "FRAMER MOTION"],
+        description: "The new portfolio website about me and my works. This is the website you are seeing now. [ 😁 click 'See Project'  to see a recursion]",
     },
 ];
 
