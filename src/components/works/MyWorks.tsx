@@ -1,11 +1,11 @@
 import Title from "../small_comps/Title"
 import WorkCard from "./WorkCard"
-import Image1 from '../../assets/images/mentor.jpg'
 import SmallParticle from "../small_comps/SmallParticle"
+import works from "../../data/works"
 
 const MyWorks = () => {
     return (
-        <section className="relative py-16 px-20 flex flex-col justify-center bg-gradient-to-t from-[#00000080] from-10% via-[#00000090] via-20% to-[#0F0F0F] to-80%">
+        <section id="projects" className="relative py-16 md:px-20 sm:px-20 px-8 flex flex-col justify-center bg-gradient-to-t from-[#00000080] from-10% via-[#00000090] via-20% to-[#0F0F0F] to-80%">
             <div className="flex justify-center mb-8 mt-4">
                 <Title text="P R O J E C T S" />
             </div>
@@ -14,17 +14,24 @@ const MyWorks = () => {
                     PROJECTS
                 </div> */}
                 <div className=" flex-[5] w-4/5 mx-auto sm:w-5/6 md:w-5/6 lg:w-4/5 xl:w-4/5">
-                    <WorkCard title="Mentor" subTitle="Learning management System" status="Completed" image={Image1} technologies={["PHP", "HTML", "CSS", "JAVASCRIPT"]} />
-                    <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} />
-                    <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} />
-                    <WorkCard title="PaperMarker" subTitle="Sample App" status="Developing" image={Image1} />
+                    {works.map((work, index) => (
+                        <WorkCard
+                            key={index}
+                            title={work.title}
+                            subTitle={work.subTitle}
+                            status={work.status}
+                            image={work.image}
+                            technologies={work.technologies}
+                            description={work.description} />
+                    ))}
                 </div>
             </div>
-            <SmallParticle position="right-32 bottom-20" />
-            <SmallParticle position="right-32 bottom-32" />
-            <SmallParticle position="right-32 bottom-44" />
+            <SmallParticle position="md:right-20 md:bottom-20 right-5 bottom-9" />
+            <SmallParticle position="md:right-32 md:bottom-20 right-6 bottom-8" />
+            <SmallParticle position="md:left-20 md:bottom-20 left-5 bottom-9" />
+            <SmallParticle position="md:left-32 md:bottom-20 left-6 bottom-8" />
             <div className="flex justify-center mb-4 mt-8 text-white">
-                SEE ALL {">>"}
+                You can see my all projects in my GitHub profile
             </div>
         </section>
     )

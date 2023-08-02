@@ -7,7 +7,7 @@ import { motion, useScroll } from "framer-motion"
 const Skills = () => {
     const { scrollYProgress } = useScroll()
     return (
-        <section className=" overflow-x-hidden relative flex flex-col py-20 h-auto px-40 bg-fixed items-start justify-center w-full bg-gradient-to-l  from-cyan-950 to-gray-900">
+        <section id="skills" className=" overflow-x-hidden relative flex flex-col py-20 h-auto sm:px-40 px-5 bg-fixed md:items-start items-center justify-center w-full bg-gradient-to-l  from-cyan-950 to-gray-900">
             <Title text="S K I L L S" />
             <div className="flex px-3 pt-10 justify-around w-full items-center flex-wrap z-10">
                 <SkillSet skillData={skills2} />
