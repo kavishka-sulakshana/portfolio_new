@@ -3,10 +3,11 @@ import { motion } from "framer-motion"
 import { useState } from "react"
 import { InfoCircleOutlined } from '@ant-design/icons';
 
-const WorkCard = ({ title, subTitle, status, link, technologies = [], image, description = "" }: { title: string, subTitle: string, status: string, link?: string, technologies?: Array<string>, image: string, description: string }) => {
+const WorkCard = ({ title, subTitle, status, link = "", technologies = [], image, description = "" }: { title: string, subTitle: string, status: string, link?: string, technologies?: Array<string>, image: string, description: string }) => {
     const [toggle, setToggle] = useState(false);
     return (
         <motion.div
+            onClick={() => setToggle(!toggle)}
             onHoverStart={() => setToggle(true)}
             onHoverEnd={() => setToggle(false)}
             className="flex font-serif backdrop-blur-md border-2 border-gray-900/40 bg-gray-900/50 my-6 rounded-lg sm:flex-row flex-col">
@@ -50,7 +51,7 @@ const WorkCard = ({ title, subTitle, status, link, technologies = [], image, des
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0 }}
                     className="flex space-x-3 my-1 text-xs font-small sm:justify-end justify-center items-center">
-                    <a href={link} className="flex space-x-4 sm:justify-end justify-center items-center">
+                    <a href={link} target="_blank" className="flex space-x-4 sm:justify-end justify-center items-center">
                         <HomeBtn text="See Project" transparent={false} />
                     </a>
                 </motion.div>

@@ -22,6 +22,7 @@ const MyWorks = () => {
                             status={work.status}
                             image={work.image}
                             technologies={work.technologies}
+                            link={work.link}
                             description={work.description} />
                     ))}
                 </div>
