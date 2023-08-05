@@ -8,8 +8,8 @@ const WorkCard = ({ title, subTitle, status, link = "", technologies = [], image
     return (
         <motion.div
             onClick={() => setToggle(!toggle)}
-            onHoverStart={() => setToggle(true)}
-            onHoverEnd={() => setToggle(false)}
+            // onHoverStart={() => setToggle(true)}
+            // onHoverEnd={() => setToggle(false)}
             className="flex font-serif backdrop-blur-md border-2 border-gray-900/40 bg-gray-900/50 my-6 rounded-lg sm:flex-row flex-col">
             <div className="flex-none">
                 <img src={image} alt="" className="w-full h-48 sm:h-full sm:w-48 object-cover rounded-lg" loading="lazy" />
@@ -31,7 +31,7 @@ const WorkCard = ({ title, subTitle, status, link = "", technologies = [], image
                         {status}
                     </div>
                 </div>
-                <div className="flex items-baseline mt-2 mb-3 pb-3 border-b border-slate-200 flex-row text-xs font-semibold flex-wrap">
+                <div className="select-none flex items-baseline mt-2 mb-3 pb-3 border-b border-slate-200 flex-row text-xs font-semibold flex-wrap">
                     {(!!technologies.length) && technologies.map((tech: string, index: number) =>
                     (
                         <div id={`${index}`} className="px-1 bg-white m-1 rounded-md">
@@ -48,11 +48,11 @@ const WorkCard = ({ title, subTitle, status, link = "", technologies = [], image
                     {description}
                 </motion.h1>
                 <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0 }}
+                    initial={{ height: 0, opacity: 0, zIndex: -10 }}
+                    animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0, zIndex: 10 }}
                     className="flex space-x-3 my-1 text-xs font-small sm:justify-end justify-center items-center">
                     <a href={link} target="_blank" className="flex space-x-4 sm:justify-end justify-center items-center">
-                        <HomeBtn text="See Project" transparent={false} />
+                        <HomeBtn text="See Project" transparent={false} active={!toggle} />
                     </a>
                 </motion.div>
                 <motion.div

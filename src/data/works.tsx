@@ -34,7 +34,7 @@ const works = [
         image: paperBot,
         technologies: ["PYTHON", "PTB Library", "FIREBASE", "GOOGLE APP SCRIPT"],
         description: "This is a simple Telegram bot to do the task of giving marks and marking online paper pdfs easily. This bot can give specific students' marks, marked PDFs, and some analytics of their marks",
-        link: "https://www.linkedin.com/posts/kavishka-sulakshana-12b571206_python-firebase-selflearning-activity-7091968285591699457-Vwl7?utm_source=share&utm_medium=member_desktop"
+        link: "https://youtu.be/HInYbasRiiw"
     },
     {
         id: 4,
