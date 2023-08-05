@@ -1,6 +1,6 @@
 import Title from "../small_comps/Title"
 import SkillSet from "./SkillSet"
-import { skills1, skills2, skills3 } from '../../RawData.ts'
+import { skills1, skills2, skills3 } from '../../data/RawData.ts'
 import background from '../../assets/images/tt.jpg'
 import { motion, useScroll } from "framer-motion"
 

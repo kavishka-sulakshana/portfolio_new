@@ -49,18 +49,19 @@ const WorkCard = ({ title, subTitle, status, link = "", technologies = [], image
                 </motion.h1>
                 <motion.div
                     initial={{ height: 0, opacity: 0, zIndex: -10 }}
-                    animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0, zIndex: 10 }}
+                    animate={{ height: toggle ? "auto" : 0, opacity: toggle ? 1 : 0, zIndex: toggle ? 10 : -10 }}
                     className="flex space-x-3 my-1 text-xs font-small sm:justify-end justify-center items-center">
                     <a href={link} target="_blank" className="flex space-x-4 sm:justify-end justify-center items-center">
                         <HomeBtn text="See Project" transparent={false} active={!toggle} />
                     </a>
                 </motion.div>
                 <motion.div
-                    initial={{ height: "auto", opacity: 1 }}
-                    animate={{ height: !toggle ? "auto" : 0, opacity: !toggle ? 1 : 0 }}
-                    className="flex items-center justify-end text-white">
-                    <span className="text-xs font-medium mx-2 text-gray-400">see more</span>
+                    onClick={() => setToggle(!toggle)}
+                    initial={{ height: "auto", opacity: 1, zIndex: 10 }}
+                    animate={{ height: !toggle ? "auto" : 0, opacity: !toggle ? 1 : 0, zIndex: !toggle ? 10 : -10 }}
+                    className="flex items-center justify-start select-none text-white">
                     <InfoCircleOutlined />
+                    <div className="text-xs font-medium mx-2 text-gray-400">see more</div>
                 </motion.div>
             </div>
         </motion.div>
