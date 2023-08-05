@@ -9,7 +9,7 @@ import image from '../images/logo.jpg'
 import EffectContainerSmall from '../../components/home/EffectContainerSmall'
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/src/assets/3DModels/lap.glb')
+  const { nodes, materials } = useGLTF('/lap.glb')
   return (
     <group {...props} dispose={null} scale={1.8} rotation={[0, Math.PI, 0]} position={[0, -2.5, 0]}>
       <group position={[0.002, -0.038, 0.414]} rotation={[0.014, 0, 0]}>
@@ -41,4 +41,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/src/assets/3DModels/lap.glb')
+useGLTF.preload('/lap.glb')
