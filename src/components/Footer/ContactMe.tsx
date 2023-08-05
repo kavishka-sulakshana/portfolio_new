@@ -47,7 +47,7 @@ const ContactMe = () => {
                     </div>
                 </div>
                 <div className="flex flex-row flex-wrap text-gray-300 md:mt-2 mt-5 sm:w-auto sm:h-full w-full">
-                    <img src={logo} alt="" className=" max-w-xs w-40 h-40 rounded-full" />
+                    {/* <img src={logo} alt="" className=" max-w-xs w-40 h-40 rounded-full" /> */}
                     <Canvas camera={{ position: [-15, 0, -15], fov: 55, rotation: [0, 0, 0] }} className="h-40">
                         <pointLight position={[20, 20, 20]} intensity={2} />
                         <Suspense fallback={null}>
