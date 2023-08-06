@@ -17,7 +17,7 @@ const App = () => {
         <Skills />
         <ContactMe />
         <div className="bg-black/80 p-2 text-center text-white text-xs">
-          © 2023 - Designed & Developed by Kavi$ul@
+          © 2023 - Designed & Developed by Kavishka Sulakshana
         </div>
       </div>
     </div>

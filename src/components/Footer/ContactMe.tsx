@@ -20,7 +20,7 @@ const ContactMe = () => {
                     <div className="flex flex-row flex-wrap text-gray-300 my-2 items-center">
                         <LinkedinOutlined />
                         {/* <p className="ml-1">LinkedIn : </p> */}
-                        <a href="https://lk.linkedin.com/in/kavishka-sulakshana-12b571206" target="_blank">
+                        <a href="https://www.linkedin.com/in/kavishka-sulakshana/" target="_blank">
                             <p className="ml-2"> Kavishka Sulakshana</p>
                         </a>
                     </div>

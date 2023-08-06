@@ -59,7 +59,7 @@ const WorkCard = ({ title, subTitle, status, link = "", technologies = [], image
                     onClick={() => setToggle(!toggle)}
                     initial={{ height: "auto", opacity: 1, zIndex: 10 }}
                     animate={{ height: !toggle ? "auto" : 0, opacity: !toggle ? 1 : 0, zIndex: !toggle ? 10 : -10 }}
-                    className="flex items-center justify-start select-none text-white">
+                    className="flex items-center justify-start select-none text-white cursor-pointer">
                     <InfoCircleOutlined />
                     <div className="text-xs font-medium mx-2 text-gray-400">see more</div>
                 </motion.div>

@@ -20,8 +20,8 @@ const HomeLeft = () => {
                 <HomeTitle delay={1.5}>Sulakshana</HomeTitle>
                 <HomeTitle delay={2}>Siriwardhana</HomeTitle>
                 <div className="mt-10 flex justify-evenly w-full flex-wrap">
-                    <HomeBtn text="See more" />
-                    <HomeBtn text="Contact me" transparent={true} />
+                    <a href="#projects"><HomeBtn text="See Projects" /></a>
+                    <a href="https://www.linkedin.com/in/kavishka-sulakshana" target="_blank" ><HomeBtn text="Contact Me" transparent={true} /></a>
                 </div>
             </div>
         </section>
