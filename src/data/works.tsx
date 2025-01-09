@@ -8,6 +8,26 @@ import portfolio from "../assets/images/logo.jpg";
 const works = [
     {
         id: 1,
+        title: "Paper Class System",
+        subTitle: "Telegram bot + Admin panel",
+        status: "Completed",
+        image: paperBot,
+        technologies: ["PYTHON", "PTB Library", "FIREBASE", "EXPRESS", "MONGODB", "REACT", "TYPESCRIPT"],
+        description: "This Telegram bot serves as a comprehensive academic management tool, designed to streamline the process of grading, summarizing marks, applying re-corrections, and distributing educational materials like online papers. Deployed for a tuition class with over 900 students.",
+        link: "https://youtu.be/HInYbasRiiw"
+    },
+    {
+        id: 2,
+        title: "PowerSmart",
+        subTitle: "Power management system",
+        status: "Completed",
+        image: powerSmart,
+        technologies: ["REACT", "REDUX", "EXPRESS", "WEBSOCKETS", "ARDUINO", "POSTGRESQL", "ML"],
+        description: "This is our third year project (Image from FreePic.com)",
+        link: ""
+    },
+    {
+        id: 3,
         title: "Mentor",
         subTitle: "Learning management System",
         status: "Completed",
@@ -17,47 +37,17 @@ const works = [
         link: "https://github.com/Group-project-mentor/mentor"
     },
     {
-        id: 2,
+        id: 4,
         title: "Trinty Cam",
         subTitle: "Camera Store (web app)",
         status: "Completed",
         image: trinty,
-        technologies: ["REACT", "EXPRESSJS", "SCSS", "MONGODB", "REDUX"],
+        technologies: ["REACT", "EXPRESS", "SCSS", "MONGODB", "REDUX"],
         description: "This is our ( PIKBITS ) first MERN application for a camera store. Successfully deployed on year 2021.)",
         link: "https://www.trintycam.com"
     },
     {
-        id: 3,
-        title: "Paper Bot",
-        subTitle: "Telegram bot",
-        status: "Completed",
-        image: paperBot,
-        technologies: ["PYTHON", "PTB Library", "FIREBASE", "GOOGLE APP SCRIPT"],
-        description: "This is a simple Telegram bot to do the task of giving marks and marking online paper pdfs easily. This bot can give specific students' marks, marked PDFs, and some analytics of their marks",
-        link: "https://youtu.be/HInYbasRiiw"
-    },
-    {
-        id: 4,
-        title: "PowerSmart",
-        subTitle: "Power management system",
-        status: "Developing",
-        image: powerSmart,
-        technologies: ["REACT", "REDUX", "EXPRESSJS", "WEBSOCKETS", "ARDUINO", "POSTGRESQL", "ML"],
-        description: "This is our third year project (Image from FreePic.com)",
-        link: ""
-    },
-    {
         id: 5,
-        title: "Python simple projects",
-        subTitle: "Simple python projects for personal use",
-        status: "Developing",
-        image: python,
-        technologies: ["PYTHON"],
-        description: "These are some simple python utils made by me for do my works easily.",
-        link: "https://github.com/kavishka-sulakshana/Python-Utils"
-    },
-    {
-        id: 6,
         title: "My Portfolio",
         subTitle: "My portfolio website",
         status: "Completed",
@@ -65,6 +55,16 @@ const works = [
         technologies: ["REACT", "TAILWINDCSS", "TYPESCRIPT", "FRAMER MOTION"],
         description: "The new portfolio website about me and my works. This is the website you are seeing now. [ 😁 click 'See Project'  to see a recursion]",
         link: "https://kavishka.netlify.app"
+    },
+    {
+        id: 6,
+        title: "Python simple projects",
+        subTitle: "Simple python projects for personal use",
+        status: "Developing",
+        image: python,
+        technologies: ["PYTHON"],
+        description: "These are some simple python utils made by me for do my works easily.",
+        link: "https://github.com/kavishka-sulakshana/Python-Utils"
     },
 ];
 

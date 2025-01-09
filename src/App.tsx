@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar/Navbar"
 import AboutMe from "./components/aboutMe/AboutMe"
 import Home from "./components/home/Home"
-import Skills from "./components/skills/Skills"
+import Skills from "./components/skills/v2/Skills"
 import MyWorks from "./components/works/MyWorks"
 import './App.css'
 import ContactMe from "./components/Footer/ContactMe"

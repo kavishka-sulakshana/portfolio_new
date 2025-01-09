@@ -15,7 +15,6 @@ export const skills2 = [
         label: "CSS / TailwindCSS",
         percentage: 80,
     },
-
 ];
 
 export const skills1 = [
@@ -75,4 +74,4 @@ export const colors = [
     "brown",
     "pink",
     "gray",
-]
+];
