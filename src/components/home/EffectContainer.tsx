@@ -21,7 +21,7 @@ const EffectContainer = () => {
     >
       <img src={Profile} className='lg:w-64 md:w-48 object-cover rounded-xl' loading='lazy' />
       <div className='flex flex-col justify-center text-center font-semibold bg-cyan-800 py-1 rounded-xl mx-auto my-4 absolute lg:w-80 md:w-36 left-0 right-0 bottom-0 opacity-100' ref={divRef}>
-        <SlickSection list={["Full Stack Developer", "Undergraduate Student", "Video Editor", "Member of ISACA"]} />
+        <SlickSection list={["Full Stack SE", "DevOps Enthusiast", "Member of ISACA"]} />
       </div>
       {/* <div className='absolute w-56 h-56 bg-white rounded-full -bottom-20'>
 
