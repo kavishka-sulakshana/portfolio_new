@@ -24,7 +24,7 @@ const works = [
         image: powerSmart,
         technologies: ["REACT", "REDUX", "EXPRESS", "WEBSOCKETS", "ARDUINO", "POSTGRESQL", "ML"],
         description: "This is our third year project (Image from FreePic.com)",
-        link: ""
+        link: "https://github.com/orgs/Power-Smart/repositories"
     },
     {
         id: 3,
