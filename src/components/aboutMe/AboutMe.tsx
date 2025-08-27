@@ -25,7 +25,7 @@ const AboutMe = () => {
                     <Title text="Who am I ?" />
                 </div>
                 <p className="text-gray-300 text-justify my-1 md:text-lg sm:text-base text-sm">
-                    I'm an undergraduate student in computer science. I have accumulated four years of
+                    I have accumulated four years of
                     self-study experience in web development, which has provided me with a strong foundation
                     in various programming languages and frameworks. I enjoy solving complex challenges and
                     finding elegant solutions as a creative problem solver,
