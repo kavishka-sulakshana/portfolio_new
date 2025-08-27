@@ -25,7 +25,7 @@ const AboutMe = () => {
                     <Title text="Who am I ?" />
                 </div>
                 <p className="text-gray-300 text-justify my-1 md:text-lg sm:text-base text-sm">
-                    I'm an undergraduate student in computer science. I have accumulated four years of
+                    I have accumulated four years of
                     self-study experience in web development, which has provided me with a strong foundation
                     in various programming languages and frameworks. I enjoy solving complex challenges and
                     finding elegant solutions as a creative problem solver,
@@ -34,8 +34,7 @@ const AboutMe = () => {
                 <br />
                 <p className="text-gray-200 text-justify my-1 md:text-lg sm:text-base text-sm">
                     I have some experiance in full stack web development and I am familiar with the technologies like
-                    <b> React, Next.js, Node.js, MongoDB, MySQL, Postgresql, Java, Python and many more </b>. I am also familiar with
-                    the tools like Git, Docker, Firebase, Netlify, Vercel, Framer Motion, 3JS etc.
+                    <b> React, Next.js, Node.js, MongoDB, MySQL, Postgresql, Java, Spring-Boot, Python and many more </b>.
                 </p>
             </div>
             <div className="md:flex md:flex-col md:justify-center md:flex-[1] hidden">
